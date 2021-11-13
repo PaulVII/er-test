@@ -8,6 +8,19 @@
   </div>
 </template>
 
+<script lang="ts">
+import Vue from "vue";
+import mermaid from "mermaid";
+export default Vue.extend({
+  created() {
+    mermaid.initialize({
+      startOnLoad: true,
+      logLevel: 1
+    });
+  },
+});
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
